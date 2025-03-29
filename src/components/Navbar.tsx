@@ -42,7 +42,7 @@ const Navbar = () => {
             className="text-2xl font-bold bg-gradient-to-r from-[#4195d1] to-[#406ab4] text-transparent bg-clip-text"
           >
             <img
-              src="logo.png"
+              src="/logo.png"
               alt="Global School Academy"
               className="h-16 w-fit object-contain"
             />
