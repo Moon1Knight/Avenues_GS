@@ -8,6 +8,8 @@ const EventsSection = lazy(() => import('./components/EventsSection'));
 const TestimonialsSection = lazy(() => import('./components/TestimonialsSection'));
 const AboutSection = lazy(() => import('./components/AboutSection'));
 const Footer = lazy(() => import('./components/Footer'));
+// const AvenuesSchooling = lazy(() => import('./components/AvenuesSchooling'));
+
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -31,14 +33,16 @@ function App() {
           animate={{ opacity: 1 }}
       className="min-h-screen w-full bg-white relative overflow-y-auto scrollbar-hide flex justify-center"
       style={{
-        backgroundImage: 'url("/src/assets/Books.svg")',
+        backgroundImage: 'url("Books.svg")',
         backgroundRepeat: 'repeat',
-        backgroundSize: '400px',
+        backgroundSize: '200px',
         backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
+        backgroundAttachment: 'fixed',
+        opacity: 0.15
       }}
     >
-      <div className="max-w-full w-full">
+      <div className="absolute inset-0  z-0"></div>
+      <div className="max-w-full w-full relative z-10">
         <Navbar />
         <main>
           <HeroSection />

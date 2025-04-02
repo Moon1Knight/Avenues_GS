@@ -3,13 +3,13 @@ import StatsSection from './StatsSection';
 
 const GlanceSection = () => {
   return (
-    <div className="relative container bg-gradient-to-br from-[#4195d1]/5 via-white to-[#406ab4]/5 mx-auto px-6">
+    <div className="relative container bg-[#4195d1]/5 mx-auto px-6">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 10 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="py-12 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start"
+        className="py-12 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2  gap-8 items-start"
       >
         <div>
           <h2 className="text-4xl font-bold bg-gradient-to-r from-red-500 via-orange-500 via-green-500 via-blue-500 to-blue-600 text-transparent bg-clip-text">

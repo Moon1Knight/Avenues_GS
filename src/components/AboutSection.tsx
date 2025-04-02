@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
 
 const AboutSection = () => {
-  return (
-    <section id="about" className="min-h-screen bg-gradient-to-br from-[#4195d1]/10 via-white to-[#406ab4]/10 relative overflow-hidden">
-      <div className="px-6 py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+   return (
+    <section id="about" className="min-h-screen  relative overflow-hidden">
+      <div className="px-6 py-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -29,9 +29,9 @@ const AboutSection = () => {
               viewport={{ once: true }}
               className="text-left"
             >
-              <h4 className="text-2xl md:text-2xl font-bold bg-gradient-to-r from-[#e32020] via-[#f18721] via-[#00833e] to-[#6cb33f] bg-clip-text text-transparent mb-2">
+              <h2 className="text-2xl md:text-2xl font-bold bg-gradient-to-r from-[#e32020] via-[#f18721] via-[#00833e] to-[#6cb33f] bg-clip-text text-transparent mb-2">
               WHO WE ARE AND WHAT WE DO 
-              </h4>
+              </h2>
               <h2 className="text-4xl md:text-4xl font-bold  bg-gradient-to-r from-[#e32020]  via-[#00833e] to-[#6cb33f] bg-clip-text text-transparent  mb-6">
               Passionate & Professional educators
               </h2>
@@ -74,10 +74,9 @@ const AboutSection = () => {
               </motion.a>
             </motion.div>
           </div> 
-        </div> {/* ✅ Added this missing closing tag */}
+        </div> 
+      <div className="col-span-2 mt-12 border-b border-black-300"></div>
       </div>
-
-      <div className="absolute inset-0 pointer-events-none" />
     </section>
   );
 };

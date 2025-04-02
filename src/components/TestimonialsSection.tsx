@@ -78,7 +78,7 @@ const TestimonialsSection = () => {
   }, [currentIndex, controls]);
 
   return (
-    <section id="testimonials" className="py-20 relative bg-gradient-to-br from-[#4195d1]/10 via-white to-[#406ab4]/10">
+    <section id="testimonials" className="py-12 relative ">
       <div className="px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -87,7 +87,7 @@ const TestimonialsSection = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-red-500 via-orange-500 via-green-500 via-blue-500 to-blue-600 text-transparent bg-clip-text text-gray-900 mb-4">
+          <h2 className="text-4xl font-bold bg-gradient-to-r  from-green-500 via-green-500 to-blue-500   text-transparent bg-clip-text text-gray-900 mb-4">
             What People Say
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
