@@ -2,9 +2,18 @@ import { motion } from 'framer-motion';
 
 const AboutSection = () => {
    return (
-    <section id="about" className="min-h-screen  relative overflow-hidden">
-      <div className="px-6 py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center max-w-7xl mx-auto">
+    <section id="about" className="min-h-screen relative overflow-hidden">
+      <div 
+        className="absolute inset-0 z-0 opacity-10"
+        style={{
+          backgroundImage: 'url("/Vector.svg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      />
+      <div className="px-6 py-8 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}

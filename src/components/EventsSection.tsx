@@ -112,6 +112,15 @@ const EventCard = ({ event, index }: { event: Event; index: number }) => {
 const EventsSection = () => {
   return (
     <section id="events" className="py-20 relative ">
+            <div 
+        className="absolute inset-0 z-0 opacity-10"
+        style={{
+          backgroundImage: 'url("/Vector2.svg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      />
       <div className="px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

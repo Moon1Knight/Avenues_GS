@@ -5,26 +5,23 @@ import Footer from './Footer';
 
 const AvenuesEducation = () => {
   return (
-    <div className="min-h-screen w-full relative overflow-y-auto flex justify-center"
-      style={{
-        backgroundImage: 'url("Books.svg")',
-        backgroundRepeat: 'repeat',
-        backgroundSize: '400px',
-        backgroundPosition: 'center',
-      }}>
-      <div className="absolute inset-0 backdrop-blur-md bg-white/10 z-0"></div>
+    <div className="min-h-screen w-full relative overflow-y-auto flex justify-center">
+      <div className="absolute inset-0  bg-white-100 z-0"></div>
+      <div className="absolute inset-0  bg-white-100  z-0"></div>
+      <div
+          className="absolute inset-0 z-0 opacity-10"
+          style={{
+            backgroundImage: 'url("/Vector3.svg")',
+            backgroundSize: '900px',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'repeat'
+          }}
+        />
       <div className="max-w-full w-full relative z-10">
         <Navbar />
-        <section id="avenuesEducation" className="py-24 mt-16 bg-white overflow-hidden">
+        <section id="avenuesEducation" className="py-24 mt-16 overflow-hidden">
           <div className="container mx-auto px-4">
-            <div className="mb-8">
-              {/* <Link to="/" className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clipRule="evenodd" />
-                </svg>
-                Back to Home
-              </Link> */}
-            </div>
+            
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -37,80 +34,88 @@ const AvenuesEducation = () => {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="rounded-xl overflow-hidden shadow-2xl"
-          >
-            <img
-              src="/Pics/gettyimages-1343473005-612x612.jpg"
-              alt="Students Learning"
-              className="w-3/4 mx-auto h-auto object-cover"
-            />
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="space-y-6"
-          >
-            <h3 className="text-2xl font-semibold text-gray-800">
-              Empowering Future Leaders
-            </h3>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              At Avenues, we believe in empowering students to define success on their own terms. 
-              Through nurturing their love for learning, expanding their sense of responsibility, 
-              and honing their critical thinking abilities, we prepare them for a future that's yet to be imagined.
-            </p>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              Our holistic approach to education focuses on developing well-rounded individuals who are not only academically proficient 
-              but also emotionally intelligent and socially responsible. We create learning environments that foster curiosity, 
-              creativity, and critical thinking skills essential for navigating an increasingly complex world.
-            </p>
-          </motion.div>
-        </div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="bg-white rounded-xl shadow-lg p-8 mb-12 hover:shadow-xl transition-shadow"
+        >
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-10">
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="rounded-xl overflow-hidden"
+            >
+              <img
+                src="/Pics/gettyimages-1343473005-612x612.jpg"
+                alt="Students Learning"
+                className="w-full h-auto object-cover rounded-lg shadow-md"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="space-y-6"
+            >
+              <h3 className="text-2xl font-semibold text-gray-800">
+                Empowering Future Leaders
+              </h3>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                At Avenues, we believe in empowering students to define success on their own terms. 
+                Through nurturing their love for learning, expanding their sense of responsibility, 
+                and honing their critical thinking abilities, we prepare them for a future that's yet to be imagined.
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Our holistic approach to education focuses on developing well-rounded individuals who are not only academically proficient 
+                but also emotionally intelligent and socially responsible. We create learning environments that foster curiosity, 
+                creativity, and critical thinking skills essential for navigating an increasingly complex world.
+              </p>
+            </motion.div>
+          </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="rounded-xl overflow-hidden shadow-2xl lg:order-2"
-          >
-            <img
-              src="/Pics/gettyimages-1215569684-612x612.jpg"
-              alt="Global Education"
-              className="w-3/4 mx-auto h-auto object-cover"
-            />
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="space-y-6 lg:order-1"
-          >
-            <h3 className="text-2xl font-semibold text-gray-800">
-              Child-Centered Education
-            </h3>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              Our educational approach combines the robust CISCE curriculum framework with innovative 
-              teaching methods that ignite passion for learning. We focus on developing global citizens 
-              who understand and respect diverse perspectives.
-            </p>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              At Avenues, we believe that education should be tailored to each child's unique abilities and interests. 
-              Our teachers serve as facilitators who guide students through personalized learning journeys, 
-              encouraging them to take ownership of their education and develop a lifelong love for learning. 
-              This approach helps students build confidence, resilience, and the ability to adapt to an ever-changing world.
-            </p>
-          </motion.div>
-        </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="rounded-xl overflow-hidden lg:order-2"
+            >
+              <img
+                src="/Pics/gettyimages-1215569684-612x612.jpg"
+                alt="Global Education"
+                className="w-full h-auto object-cover rounded-lg shadow-md"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="space-y-6 lg:order-1"
+            >
+              <h3 className="text-2xl font-semibold text-gray-800">
+                Child-Centered Education
+              </h3>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Our educational approach combines the robust CISCE curriculum framework with innovative 
+                teaching methods that ignite passion for learning. We focus on developing global citizens 
+                who understand and respect diverse perspectives.
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                At Avenues, we believe that education should be tailored to each child's unique abilities and interests. 
+                Our teachers serve as facilitators who guide students through personalized learning journeys, 
+                encouraging them to take ownership of their education and develop a lifelong love for learning. 
+                This approach helps students build confidence, resilience, and the ability to adapt to an ever-changing world.
+              </p>
+            </motion.div>
+          </div>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -428,6 +433,7 @@ const AvenuesEducation = () => {
           <div className="flex flex-col lg:flex-row">
             {/* Content Side */}
             <div className="lg:w-1/2 p-8 lg:p-12">
+            
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -445,6 +451,7 @@ const AvenuesEducation = () => {
               >
                 While academics hold significance, solely focusing on them is akin to watering just one leaf of a plant.
               </motion.p>
+              
 
               <motion.div
                 initial={{ opacity: 0, y: 20 }}

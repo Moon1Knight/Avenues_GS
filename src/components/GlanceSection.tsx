@@ -3,7 +3,7 @@ import StatsSection from './StatsSection';
 
 const GlanceSection = () => {
   return (
-    <div className="relative container bg-[#4195d1]/5 mx-auto px-6">
+    <div className="relative  bg-[#4195d1]/5 mx-auto px-6">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 10 }}
@@ -11,6 +11,16 @@ const GlanceSection = () => {
         viewport={{ once: true }}
         className="py-12 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2  gap-8 items-start"
       >
+
+        <div
+          className="absolute inset-0 z-0 opacity-10"
+          style={{
+            backgroundImage: 'url("/Vector2.svg")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+          }}
+        />
         <div>
           <h2 className="text-4xl font-bold bg-gradient-to-r from-red-500 via-orange-500 via-green-500 via-blue-500 to-blue-600 text-transparent bg-clip-text">
             Avenues at a glance

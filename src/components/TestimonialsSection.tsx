@@ -41,6 +41,15 @@ const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => {
       exit={{ opacity: 0, scale: 0.9 }}
       className="bg-white p-6 rounded-xl shadow-lg"
     >
+      <div
+        className="absolute inset-0 z-0 opacity-10"
+        style={{
+          backgroundImage: 'url("/Vector2.svg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      />
       <div className="flex items-center mb-4">
         <img
           src={testimonial.avatar}
